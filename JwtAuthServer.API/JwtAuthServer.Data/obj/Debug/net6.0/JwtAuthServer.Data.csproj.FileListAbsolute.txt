@@ -1,0 +1,17 @@
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\bin\Debug\net6.0\JwtAuthServer.Data.deps.json
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\bin\Debug\net6.0\JwtAuthServer.Data.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\bin\Debug\net6.0\JwtAuthServer.Data.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\bin\Debug\net6.0\JwtAuthServer.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\bin\Debug\net6.0\JwtAuthServer.Core.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\JwtAuthServer.Data.csproj.AssemblyReference.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\JwtAuthServer.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\JwtAuthServer.Data.AssemblyInfoInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\JwtAuthServer.Data.AssemblyInfo.cs
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\JwtAuthServer.Data.csproj.CoreCompileInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\JwtAuthServer.Data.csproj.CopyComplete
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\JwtAuthServer.Data.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\refint\JwtAuthServer.Data.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\JwtAuthServer.Data.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\obj\Debug\net6.0\ref\JwtAuthServer.Data.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\bin\Debug\net6.0\SharedLibrary.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Data\bin\Debug\net6.0\SharedLibrary.pdb

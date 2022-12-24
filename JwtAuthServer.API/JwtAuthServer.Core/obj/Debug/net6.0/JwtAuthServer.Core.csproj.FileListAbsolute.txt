@@ -1,0 +1,15 @@
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\bin\Debug\net6.0\JwtAuthServer.Core.deps.json
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\bin\Debug\net6.0\JwtAuthServer.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\bin\Debug\net6.0\JwtAuthServer.Core.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\JwtAuthServer.Core.csproj.AssemblyReference.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\JwtAuthServer.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\JwtAuthServer.Core.AssemblyInfoInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\JwtAuthServer.Core.AssemblyInfo.cs
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\JwtAuthServer.Core.csproj.CoreCompileInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\JwtAuthServer.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\refint\JwtAuthServer.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\JwtAuthServer.Core.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\ref\JwtAuthServer.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\bin\Debug\net6.0\SharedLibrary.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\bin\Debug\net6.0\SharedLibrary.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.Core\obj\Debug\net6.0\JwtAuthServer.Core.csproj.CopyComplete
