@@ -10,13 +10,13 @@ namespace JwtAuthServer.Core.Services
 {
     public interface IServiceGeneric<TEntity,TDto> where TEntity : class where TDto:class
     {
-        Task<Response<TDto>> GetAllAsync();
-        Task<Response<IEnumerable<TDto>>> GetAllAsync(int id);
+        Task<Response<TDto>> GetByIdAsync(int id);
+        Task<Response<IEnumerable<TDto>>>GetAllAsync();
         Task<Response<IEnumerable<TDto>>> Where(Expression<Func<TEntity, bool>> predicate);
         //Where koşulu sağlanabilmesi için ifade olarak fonkisoyn parametreli TEntity alan ve bool
         //dönen fonksiyonu gir demek.
-        Task<Response<TDto>>AddAsync(TEntity entity);
-        Task<Response<NoDataDto>>Remove(TEntity entity);
-        Task<Response<NoDataDto>> Update(TEntity entity);
+        Task<Response<TDto>>AddAsync(TDto entity);
+        Task<Response<NoDataDto>>Remove(int id);
+        Task<Response<NoDataDto>> Update(TDto entity, int id);
     }
 }

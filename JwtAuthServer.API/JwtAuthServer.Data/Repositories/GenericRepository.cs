@@ -32,9 +32,9 @@ namespace JwtAuthServer.Data.Repositories
             return await _dbSet.ToListAsync();
         }
 
-        public Task<TEntity> GetByIdAsync(int id)
+        public async Task<TEntity> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _dbSet.FindAsync(id);
         }
 
         public void Remove(TEntity entity)

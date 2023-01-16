@@ -9,8 +9,8 @@ namespace JwtAuthServer.Core.Repositories
 {
     public interface IGenericRepository<TEntity> where TEntity : class
     {
-        Task<TEntity> GetAllAsync();
-        Task<IEnumerable<TEntity>> GetAllAsync(int id);
+        Task<TEntity> GetByIdAsync(int id);
+        Task<IEnumerable<TEntity>> GetAllAsync();
         IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> predicate);       
         //Where koşulu sağlanabilmesi için ifade olarak fonkisoyn parametreli TEntity alan ve bool
         //dönen fonksiyonu gir demek.

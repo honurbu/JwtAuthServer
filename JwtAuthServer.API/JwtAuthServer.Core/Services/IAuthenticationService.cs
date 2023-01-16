@@ -19,7 +19,7 @@ namespace JwtAuthServer.Core.Services
         Task<Response<NoDataDto>> RevokeRefreshToken(string refreshToken);
         //Eğer RefreshToken deaktif edilecek ise NoDataDto ile Null dönülür.
 
-        Task<Response<ClientTokenDto>> CreateTokenByClient(ClientLoginDto clientLoginDto);
+        Response<ClientTokenDto> CreateTokenByClient(ClientLoginDto clientLoginDto);
         //?Client tarafından bir Token döndürülür.
 
     }

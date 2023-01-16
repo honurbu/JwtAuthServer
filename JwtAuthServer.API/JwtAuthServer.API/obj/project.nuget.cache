@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Hl7iXziU8otXJ3XB5RYLNTss0/qnR4ISKrL1FqxVS2fKE+XXZ1dE6YKS4bDE+YFCIqlWJ+r4YSOAUj0vlwIQpw==",
+  "dgSpecHash": "tY88nM2LKUf68kfQHoxndI1HR6OT1UzalRXjk8aRo3WT4GYIQIgLk2tC/0PlT46+kT7vboRA12s4rQRxEOdv1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\JwtAuthServer.API\\JwtAuthServer.API\\JwtAuthServer.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Onur\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.0\\microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.0.nupkg.sha512",
-    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.12\\microsoft.entityframeworkcore.6.0.12.nupkg.sha512",
