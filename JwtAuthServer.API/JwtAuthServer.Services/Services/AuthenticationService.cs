@@ -6,6 +6,7 @@ using JwtAuthServer.Core.Services;
 using JwtAuthServer.Core.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using SharedLibrary.Dtos;
 using System;
 using System.Collections.Generic;
@@ -23,15 +24,14 @@ namespace JwtAuthServer.Services.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<UserRefreshToken> _userRefreshTokenService;
 
-        public AuthenticationService(List<Client> clients, ITokenService tokenService, UserManager<UserApp> userManager, IUnitOfWork unitOfWork, IGenericRepository<UserRefreshToken> userRefreshTokenService)
+        public AuthenticationService(IOptions<List<Client>> optionsClient, ITokenService tokenService, UserManager<UserApp> userManager, IUnitOfWork unitOfWork, IGenericRepository<UserRefreshToken> userRefreshTokenService)
         {
-            _clients = clients;
+            _clients = optionsClient.Value;
             _tokenService = tokenService;
             _userManager = userManager;
             _unitOfWork = unitOfWork;
             _userRefreshTokenService = userRefreshTokenService;
         }
-
         public async Task<Response<TokenDto>> CreateTokenAsync(LoginDto loginDto)
         {
             if (loginDto == null) throw new ArgumentNullException(nameof(loginDto));
@@ -69,14 +69,14 @@ namespace JwtAuthServer.Services.Services
 
         public Response<ClientTokenDto> CreateTokenByClient(ClientLoginDto clientLoginDto)
         {
-            var client = _clients.SingleOrDefault(x => x.Id == clientLoginDto.ClientId && x.Secret == clientLoginDto.ClientSecret);
+            var client =  _clients.SingleOrDefault(x => x.Id == clientLoginDto.ClientId && x.Secret == clientLoginDto.ClientSecret);
 
             if(client == null)
             {
                 return Response<ClientTokenDto>.Fail("ClientId or ClientSecret Not Found !",404,true);
             }
 
-            var token = _tokenService.CreateTokenByClient(client);
+            var token =  _tokenService.CreateTokenByClient(client);
 
             return Response<ClientTokenDto>.Success(token,200);
         }
