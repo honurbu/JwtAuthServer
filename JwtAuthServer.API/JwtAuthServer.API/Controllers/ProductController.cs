@@ -32,12 +32,12 @@ namespace JwtAuthServer.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateProduct(ProductDto productDto, int id)
+        public async Task<IActionResult> UpdateProduct(ProductDto productDto)
         {
-            return ActionResultInstance(await _serviceGeneric.Update(productDto, id)); ;
+            return ActionResultInstance(await _serviceGeneric.Update(productDto, productDto.Id)); ;
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             return ActionResultInstance(await _serviceGeneric.Remove(id));

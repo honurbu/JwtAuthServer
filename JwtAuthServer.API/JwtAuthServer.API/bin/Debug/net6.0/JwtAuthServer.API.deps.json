@@ -566,6 +566,9 @@
         }
       },
       "SharedLibrary/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.0"
+        },
         "runtime": {
           "SharedLibrary.dll": {}
         }

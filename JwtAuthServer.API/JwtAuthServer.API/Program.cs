@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SharedLibrary.Configuration;
+using SharedLibrary.Services;
 using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,7 +38,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("SqlServer"), sqlOptions =>
     {
         sqlOptions.MigrationsAssembly("JwtAuthServer.Data");
-    }); 
+    });
+    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+
 });
 
 builder.Services.AddIdentity<UserApp, IdentityRole>(opt =>

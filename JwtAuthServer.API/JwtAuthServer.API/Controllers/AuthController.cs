@@ -33,17 +33,17 @@ namespace JwtAuthServer.API.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateTokenByRefreshToken(string refreshToken)
+        public async Task<IActionResult> CreateTokenByRefreshToken(RefreshTokenDto refreshToken)
         {
-            var results = await _authenticationService.CreateTokenByRefreshToken(refreshToken);
+            var results = await _authenticationService.CreateTokenByRefreshToken(refreshToken.Token);
             return ActionResultInstance(results);
         }
 
 
         [HttpPost]
-        public async Task<IActionResult> RevokeRefreshToken(string refreshToken)
+        public async Task<IActionResult> RevokeRefreshToken(RefreshTokenDto refreshToken)
         {
-            var results = await _authenticationService.RevokeRefreshToken(refreshToken);
+            var results = await _authenticationService.RevokeRefreshToken(refreshToken.Token);
             return ActionResultInstance(results);
         }
 
