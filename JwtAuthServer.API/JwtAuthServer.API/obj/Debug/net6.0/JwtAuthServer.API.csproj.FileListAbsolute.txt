@@ -76,3 +76,6 @@ C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.AP
 C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\JwtAuthServer.API\JwtAuthServer.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

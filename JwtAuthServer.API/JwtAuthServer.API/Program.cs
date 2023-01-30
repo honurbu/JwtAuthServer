@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using JwtAuthServer.Core.Configuration;
 using JwtAuthServer.Core.Models;
 using JwtAuthServer.Core.Repositories;
@@ -12,6 +13,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SharedLibrary.Configuration;
+using SharedLibrary.Extensions;
 using SharedLibrary.Services;
 using System.IdentityModel.Tokens.Jwt;
 
@@ -25,10 +27,10 @@ IWebHostEnvironment environment = builder.Environment;
 
 
 //DI Register
-builder.Services.AddScoped<IAuthenticationService,AuthenticationService>();
-builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
-builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(IServiceGeneric<,>), typeof(ServiceGeneric<,>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
@@ -44,9 +46,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.AddIdentity<UserApp, IdentityRole>(opt =>
-{ 
-    opt.User.RequireUniqueEmail= true;
-    opt.Password.RequireNonAlphanumeric= true;  
+{
+    opt.User.RequireUniqueEmail = true;
+    opt.Password.RequireNonAlphanumeric = true;
 }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
 builder.Services.Configure<CustomTokenOption>(configuration.GetSection("TokenOption"));
@@ -54,12 +56,14 @@ builder.Services.Configure<List<Client>>(configuration.GetSection("Clients"));
 
 
 
-builder.Services.AddAuthentication(options => {
+builder.Services.AddAuthentication(options =>
+{
 
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 
-}).AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, opt => {
+}).AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, opt =>
+{
 
     var tokenOptions = configuration.GetSection("TokenOption").Get<CustomTokenOption>();
 
@@ -74,13 +78,20 @@ builder.Services.AddAuthentication(options => {
         ValidateAudience = true,
         ValidateIssuer = true,
         ValidateLifetime = true,
-        ClockSkew = TimeSpan.Zero    
+        ClockSkew = TimeSpan.Zero
     };
 });
 
 
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddFluentValidation(opt =>
+{
+    opt.RegisterValidatorsFromAssemblyContaining<Program>();
+});
+builder.Services.UseCustomValidationResponse();
+
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -92,6 +103,10 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+}
+else
+{
+    app.UseCustomException();
 }
 
 app.UseHttpsRedirection();
